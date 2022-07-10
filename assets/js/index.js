@@ -20,6 +20,7 @@ function getUserInfo() {
         }
 
 
+
     })
 }
 function renderAvator(res) {
