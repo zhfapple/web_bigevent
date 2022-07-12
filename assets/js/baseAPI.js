@@ -11,6 +11,7 @@ $.ajaxPrefilter(function (option) {
     //全局统一挂在   complete  回调函数
     option.complete = function (res) {
         // 在complete回调函数中，可以使用res.responseJSON得到回调结果
+
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
             localStorage.removeItem('token') //清空指定token值
             location.href = '/login.html'

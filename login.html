@@ -80,6 +80,13 @@
         </div>
     </div>
 
+    <script>
+        (function (window) {
+            if (window.location !== window.top.location) {
+                window.top.location = window.location;
+            }
+        })(this);
+    </script>
     <!-- 导入layui js文件 -->
     <script src="/assets/lib/layui/layui.all.js"></script>
     <!-- 导入jq -->
